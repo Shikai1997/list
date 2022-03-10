@@ -5,9 +5,11 @@ const Request = axios.create({
 });
 
 const api = {
-  async get(url, params) {
+  async get(url, data = {}) {
     try {
-      const response = await Request.get(`${url + params}`);
+      const response = await Request.get(url, {
+        params: data,
+      });
       return new Promise((resolve) => {
         if (response.status === 200) {
           resolve(response);
@@ -24,5 +26,7 @@ const api = {
   },
 };
 
-export const getUserData = (params) => api.get('/users/', params);
-export const aaa = (params) => api.get('/all', params);
+export const getUserData = (userName) => api.get(`/users/${userName}`);
+export const getUserRepoList = (userName, params) => {
+  return api.get(`/users/${userName}/repos`, params);
+};
