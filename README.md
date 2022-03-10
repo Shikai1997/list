@@ -1,7 +1,7 @@
 # list
 
-* 此專案為無限滾動呈現展示，主要使用github api取得repo資料，此專案使用[doggy8088 保哥](https://shikai1997.github.io/list/) 的repo為範例。
-* [前往觀看](https://shikai1997.github.io/list/)
+* 此專案為無限滾動呈現展示，主要使用github api取得repo資料，此專案使用[doggy8088 保哥](https://github.com/doggy8088) 的repo作為範例。
+* [前往觀看github pages](https://shikai1997.github.io/list/)
 
 ## 
 
